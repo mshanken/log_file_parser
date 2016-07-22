@@ -1,0 +1,60 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    Log Parser
+  </div>
+</div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Files</a></li>
+</ul>
+
+<div class = 'panel panel-default' style = "width: 250px; margin: 61px auto;">
+    <form action="/log_parser" method="post" enctype="multipart/form-data">
+      <fieldset class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="inputFile">Log File</label>
+        <input type="file" name="input_file" class="form-control-file" id="inputFile">
+      </fieldset>
+      <div class="radio">
+        <label>
+          <input type="radio" name="file_type" id="optionsRails3" value="rails3">
+          Rails 3
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="file_type" id="optionsRails4" value="rails">
+          Rails 4
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" name="file_type" id="optionsApache" value="apache">
+          Apache
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="file_type" id="optionsMysql" value="mysql">
+          Mysql
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="file_type" id="optionsPostgresql" value="postgresql">
+          PostgreSQL
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" name="file_type" id="optionsAmazon_s3" value="amazon_s3">
+          Amazon S3
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
